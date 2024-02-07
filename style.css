@@ -45,6 +45,7 @@ body {
 	background-color: rgb(13, 34, 140);
 	border: black double 10px;
 	height: 14%;
+	
 }
 
 .rosliny {
@@ -56,4 +57,30 @@ body {
 	background-color: rgb(13, 34, 140);
 	border: black double 10px;
 	height: 14%;
+}
+
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+
+
+.snowflake {
+  position: fixed;
+  font-size: 20px;
+  color: #fff;
+  user-select: none;
+  animation: snowfall 5s linear infinite;
+}
+
+
+.snowflake::before {
+  content: "❄️";
 }
