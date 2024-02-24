@@ -1,61 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css" type="text/css">
-<title>Zimowa strona z licznikiem</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Miernik jakości hasła </title>
+<link rel="stylesheet" href="styl.css">
 </head>
 <body>
-<div class="baner">
-<h1>Strona internetowa o zimie</h1>
-</div>
-<br>
-<div class="lewy">
-<p> Liczba odwiedzin strony </p>
-<a href='http://www.counterliczniki.com%27%3Elicznik/</a> <script type='text/javascript' src='https://www.counterliczniki.com/auth.php?id=3e3cf222c0223c8eb877fdd350bf02d731752c72'></script>
-<script type="text/javascript" src="https://www.counterliczniki.com/pl/home/counter/1139117/t/3"></script>
-</div>
-<div class="srodkowy">
-<h2> Co to jest zima? </h2>
-<h3> <b>Zima</b> – jedna z czterech pór roku w przyrodzie, w strefie klimatu umiarkowanego. <br>
-Charakteryzuje się najniższymi temperaturami powietrza w skali roku, umiarkowaną ilością opadu atmosferycznego, <br>
-zazwyczaj zestaloną (zamarzniętą) formą opadu i osadu atmosferycznego, a większość świata roślin i zwierząt przechodzi okres uśpienia. </h3>
-</div>
-<div class="gifek">
-<img src="icegif.gif" alt="gif z zimy pozdrawiam Pana Ł.P albo tych co zciągają :D (pozmieniajcie coś)" width="600" height="500">
-</div>
-<div class="rosliny">
-<h3> Rośliny </h3>
-<p> Większość roślin zimuje w formie nasion lub podziemnych kłączy, cebul i bulw. <br>
-Na powierzchni pozostają tylko bezlistne krzewy i drzewa liściaste oraz zimozielone krzewy i drzewa iglaste. <br>
-Śnieg pokrywający drzewa chroni je przed przemarzaniem, a szadź jest zjawiskiem występującym tylko w zimie, gdy jest mgła i mróz. <br>
-</div>
-<div class="zwierzeta">
-<h3> Zwierzęta </h3>
-Zwierzęta bezkręgowe i kręgowce zmiennocieplne pozostają w ukryciu przez całą zimę. <br>
-Tylko ptaki i niektóre ssaki są aktywne niezależnie od temperatury otoczenia. <br>
-Ryby przeżywają zimę w wodzie pod lodem pod warunkiem, że przez przeręble odbywać się będzie jej przewietrzanie. <br>
-  <div class="snowflake"></div>
-<script>
-// Tworzymy funkcję, która generuje płatki śniegu
-function createSnowflake() {
-  const snowflake = document.createElement("div");
-  snowflake.classList.add("snowflake");
-  snowflake.style.left = `${Math.random() * 100}vw`;
-  snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
-  snowflake.innerText = "❄️";
-  document.body.appendChild(snowflake);
-
-  // Usuwamy płatek śniegu po zakończeniu animacji
-  snowflake.addEventListener("animationend", () => {
-    snowflake.remove();
-  });
-}
-
-// Wywołujemy funkcję co 1 sekundę, aby tworzyć nowe płatki śniegu
-setInterval(createSnowflake, 1000);
-</script>
-</div>
+<head>
+<header>
+<h1><a href="index.html">Sprawdź swoje hasło</a></h1>
+</header>
+<nav>
+<h2>Wybierz</h2>
+<ol>
+<li><a href="haslo.html">Sprawdź hasło</a></li>
+<li><a href="zasady.html"> Zasady tworzenia hasła</a></li>
+</ol>
+</nav>
+<main>
+<img src="haslo.png" alt="obraz haslo"/>
+</main>
+<footer>
+<h3>Miernik jakości hasła </h3>
+<p> Stronę opracował: 00000000014</p>
+<footer>
 </body>
 </html>
