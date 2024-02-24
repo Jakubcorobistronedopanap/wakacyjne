@@ -1,86 +1,28 @@
-.baner {
+header {
+	background:#829EB9;
+	height: 50px;
+	font-family: Arial;
 	text-align: center;
-	font-size: 35px;
-	border: solid 10px;
-	background-color: rgb(0, 42, 209);
-	color: white;
-	border-color: black;
-	float: top;
 }
 
-.lewy {
+nav {
+	background: #B3C6D9;
+	height: 600px;
+	width: 25%;
 	float: left;
-	border:  black dashed 10px;
+}
+
+main {
+	background: #E0E9F1;
+	height: 600px;
+	width: 75%;
 	text-align: center;
-	background-color: rgb(7, 117, 171);
-	font-size: 20px;
-	color: white;
-	width: 30%;
+	float: left
 }
 
-.srodkowy {
-	float: right;
-	text-align: center;
-	color: white;
-	background-color: rgb(13, 34, 140);
-	border: black double 10px;
-}
-	
-body {
-	background-color: rgb(51, 51, 255);
-}
-
-.gifek {
-	position: absolute;
-	left: 40px;
-	top: 425px;
-}
-
-.zwierzeta {
-	position: absolute;
-	left: 700px;
-	top: 475px;
-	text-align: center;
-	color: white;
-	background-color: rgb(13, 34, 140);
-	border: black double 10px;
-	height: 14%;
-	
-}
-
-.rosliny {
-	position: absolute;
-	left: 950px;
-	top: 700px;
-	text-align: center;
-	color: white;
-	background-color: rgb(13, 34, 140);
-	border: black double 10px;
-	height: 14%;
-}
-
-
-@keyframes snowfall {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(100vh);
-    opacity: 1;
-  }
-}
-
-
-.snowflake {
-  position: fixed;
-  font-size: 20px;
-  color: #fff;
-  user-select: none;
-  animation: snowfall 5s linear infinite;
-}
-
-
-.snowflake::before {
-  content: "❄️";
+footer {
+	background: #829EB9;
+	font-family: Arial;
+	text-align: right;
+	clear: both;
 }
