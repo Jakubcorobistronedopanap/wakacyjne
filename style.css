@@ -1,28 +1,85 @@
-header {
-	background:#829EB9;
-	height: 50px;
-	font-family: Arial;
-	text-align: center;
+@charset "utf-8";
+
+
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
-nav {
-	background: #B3C6D9;
-	height: 600px;
-	width: 25%;
+
+body {
+	background-color: RGB(94, 175, 189);
+	cursor: crosshair;
+}
+
+.baner {
+	width: 100%;
+	height: 100px;
+	color: white;
+	background-color: RGB(52, 116, 126);
+	text-align: center;
+	padding-top: 30px;
+	font-size: 120%;
+}
+
+.lewy {
+	width: 31%;
+	height: 500px;
+	background-color: RGB(40, 91, 100);
 	float: left;
+	font-size: 130%;
+	color: white;
+	cursor: nwse-resize;
 }
 
-main {
-	background: #E0E9F1;
-	height: 600px;
-	width: 75%;
-	text-align: center;
-	float: left
+.środek {
+	width: 37.5%;
+	height: 500px;
+	background-color: RGB(40, 91, 100);
+	float: left;
+	margin-left: 3px;
+	cursor: grabbing;
+
 }
 
-footer {
-	background: #829EB9;
-	font-family: Arial;
-	text-align: right;
+.prawy {
+	width: 31%;
+	height: 500px;
+	background-color: RGB(40, 91, 100);
+	float: left;
+	margin-left: 3px;
+	cursor: progress;
+	font-size: 130%;
+	color: white;
+
+}
+
+.stopka {
 	clear: both;
+	margin-top: 10px;
+	width: 100%;
+	min-height: 100px;
+	background-color: RGB(52, 116, 126);
+	cursor: sw-resize;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 130%;
+}
+
+video {
+	width: 100%;
+	margin: auto;
+	padding-top: 5%;
+	
+}
+
+.przerwa {
+	height: 3px;
+	clear: both;
+	cursor: wait;
+}
+
+
+ul, li {
+	padding-left: 40px;
 }
